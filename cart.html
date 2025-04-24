@@ -27,8 +27,8 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="cart.html">Cart</a></li>
-                <!-- <li><a href="">Services</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <!-- <li><a href="">About</a></li>
                 <li><a href="">Contact</a></li> -->
                 <li><a href="login.html">Login</a></li>
                 <li><a href="signin.html">Sign Up</a></li>
@@ -40,74 +40,43 @@
 
 <div class="smallContainer cartPage">
     <table class="tableCart">
-        <tr>
-            <th>Products</th>
-            <th>Quantity</th>
-            <th>Subtotal</th>
-            <th></th>
-        </tr>
-        <tr>
-            <td>
-                <div class="cartInfo">
-                    <img src="images/Acer Aspire 5.png" alt="">
-                    <div>
-                        <p>Acer Aspire 5</p>
-                        <small>Price: ₱ 0.00</small>
-                    </div>
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>₱ 0.00</td>
-            <td><a href="">Remove</a></td>
-        </tr>
-
-        <tr>
-            <td>
-                <div class="cartInfo">
-                    <img src="images/Kingston SA400S37480G SSDNOW A400 480GB.png" alt="">
-                    <div>
-                        <p>/Kingston SSD 480GB</p>
-                        <small>Price: ₱ 0.00</small>
-                    </div>
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>₱ 0.00</td>
-            <td><a href="">Remove</a></td>
-        </tr>
-
-        <tr>
-            <td>
-                <div class="cartInfo">
-                    <img src="images/Epson L3210 A4 All-in-One Ink Tank Printer.png" alt="">
-                    <div>
-                        <p>Epson L3210 A4 All-in-One Ink Tank Printer</p>
-                        <small>Price: ₱ 0.00</small>
-                    </div>
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>₱ 0.00</td>
-            <td><a href="">Remove</a></td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Products</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- JS will insert cart rows here -->
+        </tbody>
     </table>
+    <div id="emptyCartMessage" style="display: none; text-align: center; padding: 40px;">
+        <h2>Your cart is empty 🛒</h2>
+        <a href="shop.html" class="goShopBtn">Go to Shopping</a>
+    </div>            
+    
 
     <div class="totalPrice">
         <table>
-            <tr>
-                <td>Subtotal</td>
-                <td>₱ 0.00</td>
-            </tr>
-            <tr>
-                <td>Tax</td>
-                <td>₱ 0.00</td>
-            </tr>
-            <tr>
-                <td>Total</td>
-                <td>₱ 0.00</td>
-            </tr>
+             <!-- JS will insert subtotal, tax, and total here -->
         </table>
     </div>
+
+    <div class="checkout">
+        <a href="#" id="checkoutBtn" class="checkoutBtn" style="display: none;">Check Out</a>
+    </div>
+
+
+    <div id="checkoutModal" class="modal">
+        <div class="modal-content">
+          <h2>🎉 Thank you for your purchase!</h2>
+          <p>Your order has been placed successfully.</p>
+          <button id="backToShopBtn">Back to Shop</button>
+        </div>
+      </div>
+      
 </div>
 
     <div class="footer">
@@ -137,8 +106,108 @@
                         <p>0987654321</p>
                     </div>
             </div>
+
+            <div class="copyright">
+                <hr >
+                <p>&copy; 2025 SJ Computer. All rights reserved.</p>
+            </div>
+
         </div>
     </div>
+
+<!-- script to populate the table dynamically based on the stored cart -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            if (cart.length === 0) {
+                document.getElementById("emptyCartMessage").style.display = "block";
+                document.querySelector(".cart-container").style.display = "none"; // hide the table if you wrap it with a .cart-container
+                document.getElementById("checkoutBtn").style.display = "none"; // hide checkout button
+                return; // stop further script execution
+            }
+
+            const cartTable = document.querySelector(".tableCart");
+            const totalTable = document.querySelector(".totalPrice table");
+            const checkoutBtn = document.getElementById("checkoutBtn");
+            checkoutBtn.style.display = cart.length > 0 ? "inline-block" : "none";
+    
+            let subtotal = 0;
+    
+            cart.forEach((item, index) => {
+                const productTotal = item.price * item.quantity;
+                subtotal += productTotal;
+    
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>
+                        <div class="cartInfo">
+                            <img src="${item.image}" alt="">
+                            <div>
+                                <p>${item.name}</p>
+                                <small>Price: ₱ ${item.price.toLocaleString("en-PH", {minimumFractionDigits: 2})}</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="${item.quantity}" data-index="${index}" min="1"></td>
+                    <td>₱ ${(productTotal).toLocaleString("en-PH", {minimumFractionDigits: 2})}</td>
+                    <td><a href="#" class="remove-btn" data-index="${index}">Remove</a></td>
+                `;
+                cartTable.appendChild(row);
+            });
+    
+            const tax = subtotal * 0.12;
+            const total = subtotal + tax;
+    
+            totalTable.innerHTML = `
+                <tr><td>Subtotal</td><td>₱ ${subtotal.toLocaleString("en-PH", {minimumFractionDigits: 2})}</td></tr>
+                <tr><td>Tax</td><td>₱ ${tax.toLocaleString("en-PH", {minimumFractionDigits: 2})}</td></tr>
+                <tr><td>Total</td><td>₱ ${total.toLocaleString("en-PH", {minimumFractionDigits: 2})}</td></tr>
+            `;
+    
+            // Remove item
+            document.querySelectorAll(".remove-btn").forEach(btn => {
+                btn.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const index = this.getAttribute("data-index");
+                    cart.splice(index, 1);
+                    localStorage.setItem("cart", JSON.stringify(cart));
+                    location.reload();
+                });
+            });
+    
+            // Update quantity
+            document.querySelectorAll('input[type="number"]').forEach(input => {
+                input.addEventListener("change", function() {
+                    const index = this.getAttribute("data-index");
+                    cart[index].quantity = parseInt(this.value);
+                    localStorage.setItem("cart", JSON.stringify(cart));
+                    location.reload();
+                });
+            });
+        });
+    </script>
+
+    <!-- script to clear data from localStorage (products on cart) and proceed to confirmation page -->
+
+    <script>
+        document.getElementById("checkoutBtn").addEventListener("click", function (e) {
+        e.preventDefault(); // prevent default link behavior
+    
+        // Optional: confirm action
+        if (confirm("Are you sure you want to check out?")) {
+            // Clear the cart
+            localStorage.removeItem("cart");
+            document.getElementById("checkoutModal").style.display="block";
+        }
+    });
+    
+    document.getElementById("backToShopBtn").addEventListener("click", function () {
+    window.location.href = "shop.html";
+  });
+</script>
+  
+    
 
 </body>
 </html>

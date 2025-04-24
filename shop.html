@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">     
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
     
@@ -26,8 +25,8 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="cart.html">Cart</a></li>
-                <!-- <li><a href="">Services</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <!-- <li><a href="">About</a></li>
                 <li><a href="">Contact</a></li> -->
                 <li><a href="login.html">Login</a></li>
                 <li><a href="signin.html">Sign Up</a></li>
@@ -40,340 +39,485 @@
     <div class="smallContainer">    
     
         <div class="tabs">
-            <a href = "shop.html" class="btnAll">All Products</a>
-            <a href = "laptop.html" class="btnLaptop">Laptop</a>
-            <a href = "desktop.html" class="btnDesktop">Desktop</a>
-            <a href = "monitor.html" class="btnMonitor">Monitor</a>
-            <a href = "ssd.html" class="btnSSD">SSD</a>
-            <a href = "ups.html" class="btnUPS">UPS</a>
-            <a href = "printer.html" class="btnPrinter">Printer</a>
-            <a href = "ink.html" class="btnInk">Ink</a>     
+            <a href = "#" class="filter-tab" data-filter="all">All Products</a>
+            <a href = "#" class="filter-tab" data-filter="laptop">Laptop</a>
+            <a href = "#" class="filter-tab" data-filter="desktop">Desktop</a>
+            <a href = "#" class="filter-tab" data-filter="monitor">Monitor</a>
+            <a href = "#" class="filter-tab" data-filter="ssd">SSD</a>
+            <a href = "#" class="filter-tab" data-filter="ups">UPS</a>
+            <a href = "#" class="filter-tab" data-filter="printer">Printer</a>
+            <a href = "#" class="filter-tab" data-filter="ink">Ink</a>     
         </div>
 
         <div class="row">
-            <div class="cards">
-                <img src="images/Acer Aspire 5.png  " alt="">
-                <h3>Acer Aspire 5 15.6” laptop Ryzen 5-5500U...</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+            <a href="productDetails.html" class="product-card" data-category="laptop" 
+            onclick="viewProduct('Acer Aspire 5', 30495, 'images/Acer Aspire 5.png', 
+            'Acer Aspire 5 15.6″ Laptop Ryzen 5-5500U, 8GB RAM 512GB SSD - Silver')">
+                <div class="cards">
+                    <img src="images/Acer Aspire 5.png" alt="">
+                    <p class="laptopBadge">Laptop</p>
+                    <h3>Acer Aspire 5 15.6” laptop Ryzen 5-5500U...</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 30,495.00</p>
                 </div>
-                <p>₱ 30,495.00</p>
-            </div>
-            <div class="cards">
-                <img src="images/HP 2024 Laptop.png  " alt="">
-                <h3>HP 2024 15-fd0000 Notebook, 15.6" HD Br...</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+            </a>
+
+            <a href="productDetails.html" class="product-card" data-category="laptop" 
+            onclick="viewProduct('HP 2025 15-fd0000 Notebook', 21900, 'images/HP 2024 Laptop.png', 
+            'HP 2025 15-fd0000 Notebook, 15.6 HD Bright view display, Intel N200 Quad-core, 4GB DRR4 RAM, 12GB Flash localStorage')">
+                <div class="cards">
+                    <img src="images/HP 2024 Laptop.png  " alt="">
+                    <p class="laptopBadge">Laptop</p>
+                    <h3>HP 2024 15-fd0000 Notebook, 15.6" HD Br...</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 21,900.00</p>
                 </div>
-                <p>₱ 21,900.00</p>
-            </div>
-            <div class="cards">
-                <img src="images/Lenovo Ideapad.png  " alt="">
-                <h3>Lenovo IdeaPad Slim 1 x70 (82VG002CPH) 15.6...</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+            </a>
+
+            <a href="productDetails.html" class="product-card" data-category="laptop" 
+            onclick="viewProduct('Lenovo IdeaPad Slim 15.6 FHD', 21900, 'images/HP 2024 Laptop.png', 
+            'Lenovo IdeaPad Slim 15.6 FHD AMD Ryzen 3-7320U 8GB RAM 512GB SSD Windows 11')">
+                <div class="cards">
+                    <img src="images/Lenovo Ideapad.png" alt="">
+                    <p class="laptopBadge">Laptop</p>
+                    <h3>Lenovo IdeaPad Slim 1 x70 (82VG002CPH) 15.6...</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 29,495.00</p>
                 </div>
-                <p>₱ 29,495.00</p>
-            </div>
-            <div class="cards">
-                <img src="images/Acer Desktop PC with Acer Monitor.png  " alt="">
-                <h3>ACER X2660G-I3-8100 Desktop PC with ACER...</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+            </a>
+
+            <a href="productDetails.html" class="product-card" data-category="desktop" 
+            onclick="viewProduct('Acer Desktop PC with Acer Monitor', 29900, 'images/Acer Desktop PC with Acer Monitor.png', 
+            'Acer X2660g-I3-8100 Desktop PC with Acer S200GHQL Monitor')">
+                <div class="cards">
+                    <img src="images/Acer Desktop PC with Acer Monitor.png" alt="">
+                    <p class="desktopBadge">Desktop</p>
+                    <h3>ACER X2660G-I3-8100 Desktop PC with ACER...</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 29,999.00</p>
                 </div>
-                <p>₱ 29,999.00</p>
-            </div>
-            
-        </div>
-        <div class="row">
-            <div class="cards">
-                <img src="images/HP Desktop PC Intel Core i3.png  " alt="">
-                <h3>HP Desktop PC Intel Core i3 with 1TB HDD,...</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
-                </div>
-                <p>₱ 35,828.00</p>
-            </div>
-            <div class="cards">
-                <img src="images/Lenovo IdeaCentre 5 14IAB7 Desktop Computer.png" alt="">
-                <h3>Lenovo IdeaCentre 5 14IAB7 Desktop Comp...  </h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
-                </div>
-                <p>₱ 28,729.50</p>
-            </div>
-            <div class="cards">
-                <img src="images/ACER SA222Q EBI  LED  1920 X 1080  5MS (GTG)  .png" alt="">
-                <h3>ACER SA222Q EBI  LED  1920 X 1080  5MS (GTG)...</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
-                </div>
-                <p>₱ 4,997.00</p>
-            </div>
-            <div class="cards">
-                <img src="images/Samsung 22-Inch Full HD.png  " alt="">
-                <h3>Samsung 22-Inch Full HD IPS Monitor 3-Side  ...</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
-                </div>
-                <p>₱ 5,164.82</p>
-            </div>
+            </a>
             
         </div>
 
         <div class="row">
-            <div class="cards">
-                <img src="images/Kingston NV2 1TB NVMe PCIe Internal SSD.png" alt="">
-                <h3>Kingston NV2 1TB NVMe PCIe Internal SSD</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+            <a href="productDetails.html" class="product-card" data-category="desktop" 
+            onclick="viewProduct('HP Desktop PC Intel Core i3 with 1TB HDD', 35828, 'images/HP Desktop PC Intel Core i3.png', 
+            'HP Desktop PC Intel Core i3 with 1TB HDD, 8GB RAM, 23.8 Monitor, Keyboard and Mouse Bundle')">
+                <div class="cards">
+                    <img src="images/HP Desktop PC Intel Core i3.png" alt="">
+                    <p class="desktopBadge">Desktop</p>
+                    <h3>HP Desktop PC Intel Core i3 with 1TB HDD,...</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 35,828.00</p>
                 </div>
-                <p>₱ 4,200.00</p>
-            </div>
-            <div class="cards">
-                <img src="images/Kingston SKC600512G 512GB SATA3.png" alt="">
-                <h3>Kingston SKC600/512G 512GB SATA3 2.5" SSD</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
-                </div>
-                <p>₱ 3,200.00</p>
-            </div>
-            <div class="cards">
-                <img src="images/Kingston SA400S37480G SSDNOW A400 480GB.png" alt="">
-                <h3>Kingston 480GB SSD Solid State Drive    </h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
-                </div>
-                <p>₱ 2,800.00</p>
-            </div>
-            <div class="cards">
-                <img src="images/Kingston 240 GB SSD.png" alt="">
-                <h3>Kingston 240GB SSD Solid State Drive</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
-                </div>
-                <p>₱ 2,100</p>
-            </div>
+                </a>
+
+            <a href="productDetails.html" class="product-card" data-category="desktop" 
+            onclick="viewProduct('Lenovo IdeaCentre 5 Desktop Computer', 28729, 'images/Lenovo IdeaCentre 5 14IAB7 Desktop Computer.png', 
+            'Lenovo IdeaCentre 5 14IAB7 Desktop Computer, Intel Core I5-2400. 8GB DDR4, 500GB SSD, Integrated Intel UHD Graphics 730')">
+                    <div class="cards">
+                        <img src="images/Lenovo IdeaCentre 5 14IAB7 Desktop Computer.png" alt="">
+                        <p class="desktopBadge">Desktop</p>
+                        <h3>Lenovo IdeaCentre 5 Desktop Computer  </h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                            <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                        </div>
+                        <p>₱ 28,729.00</p>
+                    </div>
+                </a>
+
+                <a href="productDetails.html" class="product-card" data-category="monitor" 
+                onclick="viewProduct('ACER SA222Q EBI  LED  1920 X 1080  5MS (GTG)', 4997, 'images/ACER SA222Q EBI  LED  1920 X 1080  5MS (GTG)  .png', 
+                'ACER SA222Q EBI,  LED,  1920 X 1080,  5MS (GTG) 21.5, 100Hz, HDMI 1.4*1, VGA *1, High Refresh Rate')">
+                        <div class="cards">
+                        <img src="images/ACER SA222Q EBI  LED  1920 X 1080  5MS (GTG)  .png" alt="">
+                        <p class="monitorBadge">Monitor</p>
+                        <h3>ACER SA222Q EBI  LED  1920 X 1080  5MS (GTG)...</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                            <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                        </div>
+                        <p>₱ 4,997.00</p>
+                    </div>
+                </a>
+
+                <a href="productDetails.html" class="product-card" data-category="monitor" 
+                onclick="viewProduct('Samsung 22-Inch Full HD IPS Monitor', 5999, 'images/Samsung 22-Inch Full HD.png', 
+                'Samsung 22-Inch Full HD IPS Monitor, 3-Sided Bordless Design, LS22C310')">
+                    <div class="cards">
+                        <img src="images/Samsung 22-Inch Full HD.png" alt="">
+                        <p class="monitorBadge">Monitor</p>
+                        <h3>Samsung 22-Inch Full HD IPS Monitor</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                            <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                        </div>
+                        <p>₱ 5,999.00</p>
+                    </div>
+                </a>
             
         </div>
 
         <div class="row">
+            <a href="productDetails.html" class="product-card" data-category="ssd" 
+            onclick="viewProduct('Kingston NV2 1TB NVMe PCIe Internal SSD', 4200, 'images/Kingston NV2 1TB NVMe PCIe Internal SSD.png', 
+            'Kingston NV2 1TB NVMe PCIe Internal Solid State Drive')">
             <div class="cards">
-                <img src="images/APC UPS 650VA.png" alt="">
-                <h3>APC UPC 650VA</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    <img src="images/Kingston NV2 1TB NVMe PCIe Internal SSD.png" alt="">
+                    <p class="ssdBadge">SSD</p>
+                    <h3>Kingston NV2 1TB NVMe PCIe Internal SSD</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 4,200.00</p>
                 </div>
-                <p>₱ 3,400.00</p>
-            </div>
-            <div class="cards">
-                <img src="images/APC UPS  1200VA.png" alt="">
-                <h3>APC UPC 1200VA</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+            </a>
+
+            <a href="productDetails.html" class="product-card" data-category="ssd" 
+            onclick="viewProduct('Kingston SKC600/512G 512GB SATA3 2.5 SSD', 3200, 'images/Kingston SKC600512G 512GB SATA3.png', 
+            'Kingston SKC600/512G 512GB SATA3 2.5 Solid State Drive')">
+                <div class="cards">
+                    <img src="images/Kingston SKC600512G 512GB SATA3.png" alt="">
+                    <p class="ssdBadge">SSD</p>
+                    <h3>Kingston SKC600/512G 512GB SATA3 2.5" SSD</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 3,200.00</p>
                 </div>
-                <p>₱ 7,799.00</p>
-            </div>
-            <div class="cards">
-                <img src="images/Epson Ink 003 Black.png" alt="">
-                <h3>Epson Ink 003 Black</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+            </a>
+
+            <a href="productDetails.html" class="product-card" data-category="ssd" 
+            onclick="viewProduct('Kingston 480GB SSD', 2800, 'images/Kingston SA400S37480G SSDNOW A400 480GB.png', 
+            'Kingston 480GB Solid State Drive')">
+                <div class="cards">
+                    <img src="images/Kingston SA400S37480G SSDNOW A400 480GB.png" alt="">
+                    <p class="ssdBadge">SSD</p>
+                    <h3>Kingston 480GB SSD</h3><br>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 2,800.00</p>
                 </div>
-                <p>₱ 260.00</p>
-            </div>
-            <div class="cards">
-                <img src="images/Epson Ink 664 Black.png" alt="">
-                <h3>Epson Ink 664 Black</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+            </a>
+
+            <a href="productDetails.html" class="product-card" data-category="ssd" 
+            onclick="viewProduct('Kingston 240GB SSD', 2100, 'images/Kingston 240 GB SSD.png', 
+            'Kingston 240GB Solid State Drive')">
+                <div class="cards">
+                    <img src="images/Kingston 240 GB SSD.png" alt="">
+                    <p class="ssdBadge">SSD</p>
+                    <h3>Kingston 240GB SSD</h3><br>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 2,100</p>
                 </div>
-                <p>₱ 260.00</p>
-            </div>
+            </a>
             
         </div>
 
         <div class="row">
-            <div class="cards">
-                <img src="images/Epson Ink 003 Cyan.png" alt="">
-                <h3>Epson Ink 003 Cyan</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+        
+            <a href="productDetails.html" class="product-card" data-category="ups" 
+            onclick="viewProduct('APC UPS 650VA', 3400, 'images/APC UPS 650VA.png', 
+            'APC UPC 650VA')">
+                <div class="cards">
+                    <img src="images/APC UPS 650VA.png" alt="">
+                    <p class="upsBadge">UPS</p>
+                    <h3>APC UPC 650VA</h3><br>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 3,400.00</p>
                 </div>
-                <p>₱ 275.00</p>
-            </div>
-            <div class="cards">
-                <img src="images/Epson Ink 003 Magenta.png" alt="">
-                <h3>Epson Ink 003 Magenta</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+            </a>  
+
+            <a href="productDetails.html" class="product-card" data-category="ups" 
+            onclick="viewProduct('APC UPS 1200VA', 7799, 'images/APC UPS  1200VA.png', 
+            'APC UPC 1200VA')">
+                <div class="cards">
+                    <img src="images/APC UPS  1200VA.png" alt="">
+                    <p class="upsBadge">UPS</p>
+                    <h3>APC UPC 1200VA</h3><br>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 7,799.00</p>
                 </div>
-                <p>₱ 275.00</p>
-            </div>
-            <div class="cards">
-                <img src="images/Epson Ink 003 Yellow.png" alt="">
-                <h3>Epson Ink 003 Yellow</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+            </a>
+
+            <a href="productDetails.html" class="product-card" data-category="ink" 
+            onclick="viewProduct('Epson Ink 003 Black', 260, 'images/Epson Ink 003 Black.png', 
+            'Epson Ink 003 Black')">
+                <div class="cards">
+                    <img src="images/Epson Ink 003 Black.png" alt="">
+                    <p class="inkBadge">Ink</p>
+                    <h3>Epson Ink 003 Black</h3><br>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 260.00</p>
                 </div>
-                <p>₱ 275.00</p>
-            </div>
-            <div class="cards">
-                <img src="images/Epson Ink 664 Cyan.png" alt="">
-                <h3>Epson Ink 664 Cyan</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+            </a>
+
+            <a href="productDetails.html" class="product-card" data-category="ink" 
+            onclick="viewProduct('Epson Ink 664 Black', 260, 'images/Epson Ink 664 Black.png', 
+            'Epson Ink 664 Black')">
+                <div class="cards">
+                    <img src="images/Epson Ink 664 Black.png" alt="">
+                    <p class="inkBadge">Ink</p>
+                    <h3>Epson Ink 664 Black</h3><br>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 260.00</p>
                 </div>
-                <p>₱ 275.00</p>
-            </div>
+            </a>
+                
+        </div>
+
+        <div class="row">
+            <a href="productDetails.html" class="product-card" data-category="ink" 
+            onclick="viewProduct('Epson Ink 003 Cyan', 275, 'images/Epson Ink 003 Cyan.png', 
+            'Epson Ink 003 Cyan')">
+                <div class="cards">
+                    <img src="images/Epson Ink 003 Cyan.png" alt="">
+                    <p class="inkBadge">Ink</p>
+                    <h3>Epson Ink 003 Cyan</h3><br>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 275.00</p>
+                </div>
+            </a>
+
+            <a href="productDetails.html" class="product-card" data-category="ink" 
+            onclick="viewProduct('Epson Ink 003 Magenta', 275, 'images/Epson Ink 003 Magenta.png', 
+            'Epson Ink 003 Magenta')">
+                       <div class="cards">
+                    <img src="images/Epson Ink 003 Magenta.png" alt="">
+                    <p class="inkBadge">Ink</p>
+                    <h3>Epson Ink 003 Magenta</h3><br>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 275.00</p>
+                </div>
+            </a>
+
+            <a href="productDetails.html" class="product-card" data-category="ink" 
+            onclick="viewProduct('Epson Ink 003 Yellow', 275, 'images/Epson Ink 003 Yellow.png', 
+            'Epson Ink 003 Yellow')">
+                <div class="cards">
+                    <img src="images/Epson Ink 003 Yellow.png" alt="">
+                    <p class="inkBadge">Ink</p>
+                    <h3>Epson Ink 003 Yellow</h3><br>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 275.00</p>
+                </div>
+            </a>
+
+            <a href="productDetails.html" class="product-card" data-category="ink" 
+            onclick="viewProduct('Epson Ink 664 Cyan', 275, 'images/Epson Ink 664 Cyan.png', 
+            'Epson Ink 664 Cyan')">
+                <div class="cards">
+                    <img src="images/Epson Ink 664 Cyan.png" alt="">
+                    <p class="inkBadge">Ink</p>
+                    <h3>Epson Ink 664 Cyan</h3><br>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 275.00</p>
+                </div>
+            </a>
             
         </div>
         
         <div class="row">
-            <div class="cards">
-                <img src="images/Epson Ink 664 Magenta.png" alt="">
-                <h3>Epson Ink 664 Magenta</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+
+            <a href="productDetails.html" class="product-card" data-category="ink" 
+            onclick="viewProduct('Epson Ink 664 Magenta', 275, 'images/Epson Ink 664 Magenta.png', 
+            'Epson Ink 664 Magenta')">
+                <div class="cards">
+                    <img src="images/Epson Ink 664 Magenta.png" alt="">
+                    <p class="inkBadge">Ink</p>
+                    <h3>Epson Ink 664 Magenta</h3><br>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 275.00</p>
                 </div>
-                <p>₱ 275.00</p>
-            </div>
-            <div class="cards">
-                <img src="images/Epson Ink 664 Yellow.png" alt="">
-                <h3>Epson Ink 664 Yellow</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+            </a>
+
+            <a href="productDetails.html" class="product-card" data-category="ink" 
+            onclick="viewProduct('Epson Ink 664 Yellow', 275, 'images/Epson Ink 664 Yellow.png', 
+            'Epson Ink 664 Yellow')">
+                <div class="cards">
+                    <img src="images/Epson Ink 664 Yellow.png" alt="">
+                    <p class="inkBadge">Ink</p>
+                    <h3>Epson Ink 664 Yellow</h3><br>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 275.00</p>
                 </div>
-                <p>₱ 275.00</p>
-            </div>
-            <div class="cards">
-                <img src="images/Epson EcoTank L1210 A4 Ink Tank Printer.png" alt="">
-                <h3>Epson EcoTank L1210 A4 Ink Tank Printer</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+            </a>
+
+            <a href="productDetails.html" class="product-card" data-category="printer" 
+            onclick="viewProduct('Epson EcoTank L1210 A4 Ink Tank Printer', 5995, 'images/Epson EcoTank L1210 A4 Ink Tank Printer.png', 
+            'Epson EcoTank L1210 A4 Ink Tank Printer')">
+                <div class="cards">
+                    <img src="images/Epson EcoTank L1210 A4 Ink Tank Printer.png" alt="">
+                    <p class="printerBadge">Printer</p>
+                    <h3>Epson EcoTank L1210 A4 Ink Tank Printer</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 5,995.00</p>
                 </div>
-                <p>₱ 5,995.00</p>
-            </div>
-            <div class="cards">
-                <img src="images/Epson L3210 A4 All-in-One Ink Tank Printer.png" alt="">
-                <h3>Epson L3210 A4 All-in-One Ink Tank Printer</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+            </a>
+
+            <a href="productDetails.html" class="product-card" data-category="printer" 
+            onclick="viewProduct('Epson L3210 A4 All-in-One Ink Tank Printer', 8975, 'images/Epson L3210 A4 All-in-One Ink Tank Printer.png', 
+            'Epson L3210 A4 All-in-One Ink Tank Printer')">
+                <div class="cards">
+                    <img src="images/Epson L3210 A4 All-in-One Ink Tank Printer.png" alt="">
+                    <p class="printerBadge">Printer</p>
+                    <h3>Epson L3210 A4 All-in-One Ink Tank Printer</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 8,975.00</p>
                 </div>
-                <p>₱ 8,975.00</p>
-            </div>
-            
+            </a>          
         </div>
 
         <div class="row">
-            <div class="cards">
-                <img src="images/Epson L5290 Wi-Fi All-in-One Ink Tank Printer with ADF.png" alt="">
-                <h3>Epson L5290 Wi-Fi All-in-One Ink Tank Printer with ADF</h3>
-                <div class="rating">
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-solid fa-star" style="color: #FFD43B"></i>
-                    <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+            <a href="productDetails.html" class="product-card" data-category="printer" 
+            onclick="viewProduct('Epson L5290 Wi-Fi All-in-One Ink Tank Printer with ADF', 13995, 'images/Epson L5290 Wi-Fi All-in-One Ink Tank Printer with ADF.png', 
+            'Epson L5290 Wi-Fi All-in-One Ink Tank Printer with ADF')">
+                <div class="cards">
+                    <img src="images/Epson L5290 Wi-Fi All-in-One Ink Tank Printer with ADF.png" alt="">
+                    <p class="printerBadge">Printer</p>
+                    <h3>Epson L5290 Wi-Fi All-in-One Ink Tank Printer with ADF</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B"></i>
+                        <i class="fa-regular fa-star" style="color: #FFD43B"></i>
+                    </div>
+                    <p>₱ 13,995.00</p>
                 </div>
-                <p>₱ 13,995.00</p>
-            </div>
+            </a>
             
             
         </div>
@@ -409,9 +553,66 @@
                         <h4>Contact Us</h4>
                         <p>0987654321</p>
                     </div>
+
             </div>
+
+            <div class="copyright">
+                <hr >
+                <p>&copy; 2025 SJ Computer. All rights reserved.</p>
+            </div>
+
         </div>
     </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('.filter-tab');
+            const products = document.querySelectorAll('.product-card');
+        
+            tabs.forEach(tab => {
+                tab.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const filter = tab.dataset.filter;
+        
+                    // Remove active class from all tabs
+                    tabs.forEach(t => t.classList.remove('active-tab'));
+                    // Add active class to clicked tab
+                    tab.classList.add('active-tab');
+        
+                    // Show/hide products based on filter
+                    products.forEach(product => {
+                        const category = product.dataset.category;
+                        if (filter === 'all' || category === filter) {
+                            product.style.display = 'block';
+                        } else {
+                            product.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        
+            // Auto-select "All" on load
+            const defaultTab = document.querySelector('.filter-tab[data-filter="all"]');
+            if (defaultTab) defaultTab.click();
+        });
+        </script>
+
+    <script>
+        function viewProduct(name, price, image, description) {
+            const product = {
+                name: name,
+                price: price,
+                image: image,
+                description: description
+            };
+            localStorage.setItem("selectedProduct", JSON.stringify(product));
+            window.location.href = "productDetails.html";
+        }
+    </script>
+    
+        
+
 
 </body>
 </html>

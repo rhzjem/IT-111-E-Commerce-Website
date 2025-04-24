@@ -27,8 +27,8 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="shop.html">Shop</a></li>
                         <li><a href="cart.html">Cart</a></li>
-                        <!-- <li><a href="">Services</a></li>
-                        <li><a href="">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <!-- <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li> -->
                         <li><a href="login.html">Login</a></li>
                         <li><a href="signin.html">Sign Up</a></li>
@@ -62,55 +62,67 @@
                     <li class="cardItems swiper-slide">
                         <a href="#" class="cardLink">
                             <img src="images/Acer Aspire 5.png" alt="Card image1" class="cardImage">
-                            <p class="partsBadge">Laptop</p>
+                            <p class="laptopBadge">Laptop</p>
                             <h2 class="cardTitle">Acer Aspire 5</h2>
-                            <h2 class="price">₱ 0.00</h2>
-                            <button class="cardButton">View on Shop</button>
-                        </a>    
+                            <h2 class="price">₱ 30,495.00</h2>
+                            <button class="cardButton" 
+                            onclick="viewProduct('Acer Aspire 5', 30495, 'images/Acer Aspire 5.png', 
+                            'Acer Aspire 5 15.6″ Laptop Ryzen 5-5500U, 8GB RAM 512GB SSD - Silver')">View Product</button> 
+                        </a>
                     </li>
                     <li class="cardItems swiper-slide">
                         <a href="#" class="cardLink">
                             <img src="images/Kingston SA400S37480G SSDNOW A400 480GB.png" alt="Card image2" class="cardImage">
-                            <p class="accessoriesBadge">SSD</p>
+                            <p class="ssdBadge">SSD</p>
                             <h2 class="cardTitle">Kingston 480GB SSD</h2>
-                            <h2 class="price">₱ 0.00</h2>
-                            <button class="cardButton">View on Shop</button>
+                            <h2 class="price">₱ 2,800.00</h2>
+                            <button class="cardButton"  
+                            onclick="viewProduct('Kingston 480GB SSD', 2800, 'images/Kingston SA400S37480G SSDNOW A400 480GB.png', 
+                            'Kingston 480GB Solid State Drive')">View on Shop</button>
                         </a>    
                     </li>
                     <li class="cardItems swiper-slide">
                         <a href="#" class="cardLink">
                             <img src="images/Epson EcoTank L1210 A4 Ink Tank Printer.png" alt="Card image3" class="cardImage">
-                            <p class="partsBadge">Printer</p>
+                            <p class="printerBadge">Printer</p>
                             <h2 class="cardTitle">Epson EcoTank L1210...</h2>
-                            <h2 class="price">₱ 0.00</h2>
-                            <button class="cardButton">View on Shop</button>
+                            <h2 class="price">₱ 5,995.00</h2>
+                            <button class="cardButton" 
+                            onclick="viewProduct('Epson EcoTank L1210 A4 Ink Tank Printer', 5995, 'images/Epson EcoTank L1210 A4 Ink Tank Printer.png', 
+                            'Epson EcoTank L1210 A4 Ink Tank Printer')">View on Shop</button>
                         </a>    
                     </li>
                     <li class="cardItems swiper-slide">
                         <a href="#" class="cardLink">
                             <img src="images/Lenovo Ideapad.png" alt="Card image4" class="cardImage">
-                            <p class="partsBadge">Laptop</p>
+                            <p class="laptopBadge">Laptop</p>
                             <h2 class="cardTitle">Lenovo Ideapad</h2>
-                            <h2 class="price">₱ 0.00</h2>
-                            <button class="cardButton">View on Shop</button>
+                            <h2 class="price">₱ 29,495.00</h2>
+                            <button class="cardButton"  
+                            onclick="viewProduct('Lenovo IdeaPad Slim 15.6 FHD', 21900, 'images/HP 2024 Laptop.png', 
+                            'Lenovo IdeaPad Slim 15.6 FHD AMD Ryzen 3-7320U 8GB RAM 512GB SSD Windows 11')">View on Shop</button>
                         </a>    
                     </li>
                     <li class="cardItems swiper-slide">
                         <a href="#" class="cardLink">
                             <img src="images/Epson Ink 003 Black.png" alt="Card image5" class="cardImage">
-                            <p class="accessoriesBadge">Ink</p>
+                            <p class="inkBadge">Ink</p>
                             <h2 class="cardTitle">Epson Ink 003 Black</h2>
-                            <h2 class="price">₱ 0.00</h2>
-                            <button class="cardButton">View on Shop</button>
+                            <h2 class="price">₱ 260.00</h2>
+                            <button class="cardButton" 
+                            onclick="viewProduct('Epson Ink 003 Black', 260, 'images/Epson Ink 003 Black.png', 
+                            'Epson Ink 003 Black')">View on Shop</button>
                         </a>    
                     </li>
                     <li class="cardItems swiper-slide">
                         <a href="#" class="cardLink">
                             <img src="images/Acer Desktop PC with Acer Monitor.png" alt="Card image6" class="cardImage">
-                            <p class="accessoriesBadge">Desktop</p>
-                            <h2 class="cardTitle">Acer Desktop PC with Acer Monitor</h2>
-                            <h2 class="price">₱ 0.00</h2>
-                            <button class="cardButton">View on Shop</button>
+                            <p class="desktopBadge">Desktop</p>
+                            <h2 class="cardTitle">Acer Desktop PC</h2>
+                            <h2 class="price">₱ 29,999.00</h2>
+                            <button class="cardButton" 
+                            onclick="viewProduct('Acer Desktop PC with Acer Monitor', 29900, 'images/Acer Desktop PC with Acer Monitor.png', 
+                            'Acer X2660g-I3-8100 Desktop PC with Acer S200GHQL Monitor')">View on Shop</button>
                         </a>    
                     </li>
                 </ul>
@@ -129,61 +141,27 @@
         <div class="row">
             <div class="left">
                 <h2>Limited-Time Offer</h2>
-                <h1>ASUS TUF Gaming Monitor 27”</h1>
+                <h1>Samsung 22-Inch Full HD IPS Monitor</h1>
                 <p>Upgrade your setup with ultra-smooth 
-                    visuals, 165Hz Full HD<br>high refresh rates 
-                    for ultra-smooth gameplay!</p>
+                    visuals, 22-Inch Full HD IPS Monitor<br>high refresh rates 
+                    for ultra-smooth experience!</p>
                 <div class="price">
-                    <p>Now only <b>Php 9,999.00</b></b>
+                    <p>Now only <b>Php 5,999.00</b></b>
                 </div>
-                <a href="#" class="buybtn">Buy Now</a><br>
+                <a href="productDetails.html" class="buybtn" data-category="monitor" 
+                onclick="viewProduct('Samsung 22-Inch Full HD IPS Monitor', 5999, 'images/Samsung 22-Inch Full HD.png', 
+                'Samsung 22-Inch Full HD IPS Monitor, 3-Sided Bordless Design, LS22C310')">Buy Now</a><br>
                 <div class="valid">
                     <small>Valid until April 30,2025 </small>
                 </div>
             </div>
             <div class="right">
-                <img src="images/asustuf.png" alt="asusImage">
+                <img src="images/limiterTimeOfferPic.png" alt="asusImage">
             </div>
         </div>
         </div>
     </div>
     
-    <div class="servicesection">
-        <h3>Services Overview</h3>
-        <div class="rowService">
-            <div class="left">
-                <div class="repair">
-                    <div class="repairCon">
-                        <img src="images/repair1.png" alt="">
-                        <h2>Hardware Troubleshooting</h2>
-                    </div>
-                    <div class="repairCon">
-                        <img src="images/repair2.png" alt="">
-                        <h2>OS Installation</h2>
-                    </div> 
-                </div>
-                <div class="serviceButton">
-                    <a href="">Book Repair</a>
-                </div>
-            </div>
-
-            <div class="right">
-                <div class="upgrade">
-                    <div class="upgradeCon">
-                        <img src="images/upgrade1.png" alt="">
-                        <h2>RAM and SSD Upgrade</h2>
-                    </div>
-                    <div class="upgradeCon">
-                        <img src="images/upgrade2.png" alt="">
-                        <h2>Processor Installations</h2>
-                    </div>  
-                </div>
-                <div class="serviceButton">
-                    <a href="">Book Upgrade</a>
-                </div>   
-            </div>
-        </div>
-    </div>
 
     <div class="whyChoose">
         <div class="title">Why Choose Us?</div>
@@ -307,8 +285,25 @@
                         <p>0987654321</p>
                     </div>
             </div>
+
+            <div class="copyright">
+                <hr >
+                <p>&copy; 2025 SJ Computer. All rights reserved.</p>
+            </div>
+
         </div>
     </div>
+
+
+<!-- script to view the product -->
+    <script>
+        function viewProduct(name, price, image, description) {
+        const product = { name, price, image, description };
+        localStorage.setItem("selectedProduct", JSON.stringify(product));
+        window.location.href = "productDetails.html";
+    }
+
+    </script>
 
 </body>
 </html>
